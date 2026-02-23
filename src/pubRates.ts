@@ -79,11 +79,19 @@ export function resolvePubRate(county: string, city: string | null) {
 
   if (!row) return null;
 
+  const countyForOutside = normalizeName(row.parent_county ?? normalizedCounty);
+  const outsideCountyRow =
+    pubRates.rows.find(
+      (candidate) =>
+        candidate.kind === "county_outside" && normalizeName(candidate.base) === countyForOutside
+    ) ?? null;
+
   return {
     reporting_code: row.reporting_code,
     tax_rate_percent: row.tax_rate_percent,
     tax_rate_decimal: row.tax_rate_decimal,
     tax_source_kind: row.kind,
-    tax_source_locality: row.locality
+    tax_source_locality: row.locality,
+    outside_county_rate_decimal: outsideCountyRow?.tax_rate_decimal ?? null
   };
 }

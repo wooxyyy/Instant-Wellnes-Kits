@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:interactive": "ts-node src/index.ts --interactive",
+    "start:csv": "ts-node src/index.ts --csv data/input.csv",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
