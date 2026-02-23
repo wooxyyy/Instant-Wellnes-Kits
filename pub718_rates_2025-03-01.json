@@ -1,0 +1,700 @@
+{
+  "source_pdf": "pub718.pdf",
+  "effective_date": "2025-03-01",
+  "generated_utc": "2026-02-23T22:27:58.773191Z",
+  "rows": [
+    {
+      "locality": "New York State only",
+      "base": "New York State only",
+      "kind": "state_only",
+      "parent_county": null,
+      "tax_rate_percent": 4.0,
+      "tax_rate_decimal": 0.04,
+      "reporting_code": "0021"
+    },
+    {
+      "locality": "Albany",
+      "base": "Albany",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0181"
+    },
+    {
+      "locality": "Allegany",
+      "base": "Allegany",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.5,
+      "tax_rate_decimal": 0.085,
+      "reporting_code": "0221"
+    },
+    {
+      "locality": "Broome",
+      "base": "Broome",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0321"
+    },
+    {
+      "locality": "Cattaraugus – except",
+      "base": "Cattaraugus",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0481"
+    },
+    {
+      "locality": "Olean (city)",
+      "base": "Olean (city)",
+      "kind": "city",
+      "parent_county": "Cattaraugus",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0441"
+    },
+    {
+      "locality": "Salamanca (city)",
+      "base": "Salamanca (city)",
+      "kind": "city",
+      "parent_county": "Cattaraugus",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0431"
+    },
+    {
+      "locality": "Cayuga – except",
+      "base": "Cayuga",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0511"
+    },
+    {
+      "locality": "Auburn (city)",
+      "base": "Auburn (city)",
+      "kind": "city",
+      "parent_county": "Cayuga",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0561"
+    },
+    {
+      "locality": "Chautauqua",
+      "base": "Chautauqua",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0651"
+    },
+    {
+      "locality": "Chemung",
+      "base": "Chemung",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0711"
+    },
+    {
+      "locality": "Chenango – except",
+      "base": "Chenango",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0861"
+    },
+    {
+      "locality": "Norwich (city)",
+      "base": "Norwich (city)",
+      "kind": "city",
+      "parent_county": "Chenango",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0831"
+    },
+    {
+      "locality": "Clinton",
+      "base": "Clinton",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "0921"
+    },
+    {
+      "locality": "Columbia",
+      "base": "Columbia",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1021"
+    },
+    {
+      "locality": "Cortland",
+      "base": "Cortland",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1131"
+    },
+    {
+      "locality": "Delaware",
+      "base": "Delaware",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1221"
+    },
+    {
+      "locality": "Dutchess",
+      "base": "Dutchess",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.125,
+      "tax_rate_decimal": 0.08125,
+      "reporting_code": "1311"
+    },
+    {
+      "locality": "Erie",
+      "base": "Erie",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.75,
+      "tax_rate_decimal": 0.0875,
+      "reporting_code": "1451"
+    },
+    {
+      "locality": "Essex",
+      "base": "Essex",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1521"
+    },
+    {
+      "locality": "Franklin",
+      "base": "Franklin",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1621"
+    },
+    {
+      "locality": "Fulton – except",
+      "base": "Fulton",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1791"
+    },
+    {
+      "locality": "Gloversville (city)",
+      "base": "Gloversville (city)",
+      "kind": "city",
+      "parent_county": "Fulton",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1741"
+    },
+    {
+      "locality": "Johnstown (city)",
+      "base": "Johnstown (city)",
+      "kind": "city",
+      "parent_county": "Fulton",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1751"
+    },
+    {
+      "locality": "Genesee",
+      "base": "Genesee",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1811"
+    },
+    {
+      "locality": "Greene",
+      "base": "Greene",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "1911"
+    },
+    {
+      "locality": "Hamilton",
+      "base": "Hamilton",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2011"
+    },
+    {
+      "locality": "Herkimer",
+      "base": "Herkimer",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.25,
+      "tax_rate_decimal": 0.0825,
+      "reporting_code": "2121"
+    },
+    {
+      "locality": "Jefferson",
+      "base": "Jefferson",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2221"
+    },
+    {
+      "locality": "Lewis",
+      "base": "Lewis",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2321"
+    },
+    {
+      "locality": "Livingston",
+      "base": "Livingston",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2411"
+    },
+    {
+      "locality": "Madison – except",
+      "base": "Madison",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2511"
+    },
+    {
+      "locality": "Oneida (city)",
+      "base": "Oneida (city)",
+      "kind": "city",
+      "parent_county": "Madison",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2541"
+    },
+    {
+      "locality": "Monroe",
+      "base": "Monroe",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2611"
+    },
+    {
+      "locality": "Montgomery",
+      "base": "Montgomery",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2781"
+    },
+    {
+      "locality": "Nassau",
+      "base": "Nassau",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.625,
+      "tax_rate_decimal": 0.08625,
+      "reporting_code": "2811"
+    },
+    {
+      "locality": "New York City",
+      "base": "New York City",
+      "kind": "nyc",
+      "parent_county": null,
+      "tax_rate_percent": 8.875,
+      "tax_rate_decimal": 0.08875,
+      "reporting_code": "8081"
+    },
+    {
+      "locality": "Niagara",
+      "base": "Niagara",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "2911"
+    },
+    {
+      "locality": "Oneida – except",
+      "base": "Oneida",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.75,
+      "tax_rate_decimal": 0.0875,
+      "reporting_code": "3010"
+    },
+    {
+      "locality": "Rome (city)",
+      "base": "Rome (city)",
+      "kind": "city",
+      "parent_county": "Oneida",
+      "tax_rate_percent": 8.75,
+      "tax_rate_decimal": 0.0875,
+      "reporting_code": "3015"
+    },
+    {
+      "locality": "Utica (city)",
+      "base": "Utica (city)",
+      "kind": "city",
+      "parent_county": "Oneida",
+      "tax_rate_percent": 8.75,
+      "tax_rate_decimal": 0.0875,
+      "reporting_code": "3018"
+    },
+    {
+      "locality": "Onondaga",
+      "base": "Onondaga",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "3121"
+    },
+    {
+      "locality": "Ontario",
+      "base": "Ontario",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 7.5,
+      "tax_rate_decimal": 0.075,
+      "reporting_code": "3211"
+    },
+    {
+      "locality": "Orange",
+      "base": "Orange",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.125,
+      "tax_rate_decimal": 0.08125,
+      "reporting_code": "3321"
+    },
+    {
+      "locality": "Orleans",
+      "base": "Orleans",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "3481"
+    },
+    {
+      "locality": "Oswego – except",
+      "base": "Oswego",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "3501"
+    },
+    {
+      "locality": "Oswego (city)",
+      "base": "Oswego (city)",
+      "kind": "city",
+      "parent_county": "Oswego",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "3561"
+    },
+    {
+      "locality": "Otsego",
+      "base": "Otsego",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "3621"
+    },
+    {
+      "locality": "Putnam",
+      "base": "Putnam",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.375,
+      "tax_rate_decimal": 0.08375,
+      "reporting_code": "3731"
+    },
+    {
+      "locality": "Rensselaer",
+      "base": "Rensselaer",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "3881"
+    },
+    {
+      "locality": "Rockland",
+      "base": "Rockland",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.375,
+      "tax_rate_decimal": 0.08375,
+      "reporting_code": "3921"
+    },
+    {
+      "locality": "St. Lawrence – except",
+      "base": "St. Lawrence",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4091"
+    },
+    {
+      "locality": "Ogdensburg (city)",
+      "base": "Ogdensburg (city)",
+      "kind": "city",
+      "parent_county": "St. Lawrence",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4012"
+    },
+    {
+      "locality": "Saratoga – except",
+      "base": "Saratoga",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 7.0,
+      "tax_rate_decimal": 0.07,
+      "reporting_code": "4111"
+    },
+    {
+      "locality": "Saratoga Springs (city)",
+      "base": "Saratoga Springs (city)",
+      "kind": "city",
+      "parent_county": "Saratoga",
+      "tax_rate_percent": 7.0,
+      "tax_rate_decimal": 0.07,
+      "reporting_code": "4131"
+    },
+    {
+      "locality": "Schenectady",
+      "base": "Schenectady",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4241"
+    },
+    {
+      "locality": "Schoharie",
+      "base": "Schoharie",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4321"
+    },
+    {
+      "locality": "Schuyler",
+      "base": "Schuyler",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4411"
+    },
+    {
+      "locality": "Seneca",
+      "base": "Seneca",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4511"
+    },
+    {
+      "locality": "Steuben",
+      "base": "Steuben",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4691"
+    },
+    {
+      "locality": "Suffolk",
+      "base": "Suffolk",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.75,
+      "tax_rate_decimal": 0.0875,
+      "reporting_code": "4711"
+    },
+    {
+      "locality": "Sullivan",
+      "base": "Sullivan",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4821"
+    },
+    {
+      "locality": "Tioga",
+      "base": "Tioga",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "4921"
+    },
+    {
+      "locality": "Tompkins – except",
+      "base": "Tompkins",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "5081"
+    },
+    {
+      "locality": "Ithaca (city)",
+      "base": "Ithaca (city)",
+      "kind": "city",
+      "parent_county": "Tompkins",
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "5021"
+    },
+    {
+      "locality": "Ulster",
+      "base": "Ulster",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "5111"
+    },
+    {
+      "locality": "Warren – except",
+      "base": "Warren",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 7.0,
+      "tax_rate_decimal": 0.07,
+      "reporting_code": "5281"
+    },
+    {
+      "locality": "Glens Falls (city)",
+      "base": "Glens Falls (city)",
+      "kind": "city",
+      "parent_county": "Warren",
+      "tax_rate_percent": 7.0,
+      "tax_rate_decimal": 0.07,
+      "reporting_code": "5211"
+    },
+    {
+      "locality": "Washington",
+      "base": "Washington",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 7.0,
+      "tax_rate_decimal": 0.07,
+      "reporting_code": "5311"
+    },
+    {
+      "locality": "Wayne",
+      "base": "Wayne",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "5421"
+    },
+    {
+      "locality": "Westchester – except",
+      "base": "Westchester",
+      "kind": "county_outside",
+      "parent_county": null,
+      "tax_rate_percent": 8.375,
+      "tax_rate_decimal": 0.08375,
+      "reporting_code": "5581"
+    },
+    {
+      "locality": "Mount Vernon (city)",
+      "base": "Mount Vernon (city)",
+      "kind": "city",
+      "parent_county": "Westchester",
+      "tax_rate_percent": 8.375,
+      "tax_rate_decimal": 0.08375,
+      "reporting_code": "5521"
+    },
+    {
+      "locality": "New Rochelle (city)",
+      "base": "New Rochelle (city)",
+      "kind": "city",
+      "parent_county": "Westchester",
+      "tax_rate_percent": 8.375,
+      "tax_rate_decimal": 0.08375,
+      "reporting_code": "6861"
+    },
+    {
+      "locality": "White Plains (city)",
+      "base": "White Plains (city)",
+      "kind": "city",
+      "parent_county": "Westchester",
+      "tax_rate_percent": 8.375,
+      "tax_rate_decimal": 0.08375,
+      "reporting_code": "6513"
+    },
+    {
+      "locality": "Yonkers (city)",
+      "base": "Yonkers (city)",
+      "kind": "city",
+      "parent_county": "Westchester",
+      "tax_rate_percent": 8.875,
+      "tax_rate_decimal": 0.08875,
+      "reporting_code": "6511"
+    },
+    {
+      "locality": "Wyoming",
+      "base": "Wyoming",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "5621"
+    },
+    {
+      "locality": "Yates",
+      "base": "Yates",
+      "kind": "county",
+      "parent_county": null,
+      "tax_rate_percent": 8.0,
+      "tax_rate_decimal": 0.08,
+      "reporting_code": "5721"
+    }
+  ]
+}

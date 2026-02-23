@@ -1,0 +1,78 @@
+locality,base,kind,parent_county,tax_rate_percent,tax_rate_decimal,reporting_code
+New York State only,New York State only,state_only,,4.0,0.04,0021
+Albany,Albany,county,,8.0,0.08,0181
+Allegany,Allegany,county,,8.5,0.085,0221
+Broome,Broome,county,,8.0,0.08,0321
+Cattaraugus – except,Cattaraugus,county_outside,,8.0,0.08,0481
+Olean (city),Olean (city),city,Cattaraugus,8.0,0.08,0441
+Salamanca (city),Salamanca (city),city,Cattaraugus,8.0,0.08,0431
+Cayuga – except,Cayuga,county_outside,,8.0,0.08,0511
+Auburn (city),Auburn (city),city,Cayuga,8.0,0.08,0561
+Chautauqua,Chautauqua,county,,8.0,0.08,0651
+Chemung,Chemung,county,,8.0,0.08,0711
+Chenango – except,Chenango,county_outside,,8.0,0.08,0861
+Norwich (city),Norwich (city),city,Chenango,8.0,0.08,0831
+Clinton,Clinton,county,,8.0,0.08,0921
+Columbia,Columbia,county,,8.0,0.08,1021
+Cortland,Cortland,county,,8.0,0.08,1131
+Delaware,Delaware,county,,8.0,0.08,1221
+Dutchess,Dutchess,county,,8.125,0.08125,1311
+Erie,Erie,county,,8.75,0.0875,1451
+Essex,Essex,county,,8.0,0.08,1521
+Franklin,Franklin,county,,8.0,0.08,1621
+Fulton – except,Fulton,county_outside,,8.0,0.08,1791
+Gloversville (city),Gloversville (city),city,Fulton,8.0,0.08,1741
+Johnstown (city),Johnstown (city),city,Fulton,8.0,0.08,1751
+Genesee,Genesee,county,,8.0,0.08,1811
+Greene,Greene,county,,8.0,0.08,1911
+Hamilton,Hamilton,county,,8.0,0.08,2011
+Herkimer,Herkimer,county,,8.25,0.0825,2121
+Jefferson,Jefferson,county,,8.0,0.08,2221
+Lewis,Lewis,county,,8.0,0.08,2321
+Livingston,Livingston,county,,8.0,0.08,2411
+Madison – except,Madison,county_outside,,8.0,0.08,2511
+Oneida (city),Oneida (city),city,Madison,8.0,0.08,2541
+Monroe,Monroe,county,,8.0,0.08,2611
+Montgomery,Montgomery,county,,8.0,0.08,2781
+Nassau,Nassau,county,,8.625,0.08625,2811
+New York City,New York City,nyc,,8.875,0.08875,8081
+Niagara,Niagara,county,,8.0,0.08,2911
+Oneida – except,Oneida,county_outside,,8.75,0.0875,3010
+Rome (city),Rome (city),city,Oneida,8.75,0.0875,3015
+Utica (city),Utica (city),city,Oneida,8.75,0.0875,3018
+Onondaga,Onondaga,county,,8.0,0.08,3121
+Ontario,Ontario,county,,7.5,0.075,3211
+Orange,Orange,county,,8.125,0.08125,3321
+Orleans,Orleans,county,,8.0,0.08,3481
+Oswego – except,Oswego,county_outside,,8.0,0.08,3501
+Oswego (city),Oswego (city),city,Oswego,8.0,0.08,3561
+Otsego,Otsego,county,,8.0,0.08,3621
+Putnam,Putnam,county,,8.375,0.08375,3731
+Rensselaer,Rensselaer,county,,8.0,0.08,3881
+Rockland,Rockland,county,,8.375,0.08375,3921
+St. Lawrence – except,St. Lawrence,county_outside,,8.0,0.08,4091
+Ogdensburg (city),Ogdensburg (city),city,St. Lawrence,8.0,0.08,4012
+Saratoga – except,Saratoga,county_outside,,7.0,0.07,4111
+Saratoga Springs (city),Saratoga Springs (city),city,Saratoga,7.0,0.07,4131
+Schenectady,Schenectady,county,,8.0,0.08,4241
+Schoharie,Schoharie,county,,8.0,0.08,4321
+Schuyler,Schuyler,county,,8.0,0.08,4411
+Seneca,Seneca,county,,8.0,0.08,4511
+Steuben,Steuben,county,,8.0,0.08,4691
+Suffolk,Suffolk,county,,8.75,0.0875,4711
+Sullivan,Sullivan,county,,8.0,0.08,4821
+Tioga,Tioga,county,,8.0,0.08,4921
+Tompkins – except,Tompkins,county_outside,,8.0,0.08,5081
+Ithaca (city),Ithaca (city),city,Tompkins,8.0,0.08,5021
+Ulster,Ulster,county,,8.0,0.08,5111
+Warren – except,Warren,county_outside,,7.0,0.07,5281
+Glens Falls (city),Glens Falls (city),city,Warren,7.0,0.07,5211
+Washington,Washington,county,,7.0,0.07,5311
+Wayne,Wayne,county,,8.0,0.08,5421
+Westchester – except,Westchester,county_outside,,8.375,0.08375,5581
+Mount Vernon (city),Mount Vernon (city),city,Westchester,8.375,0.08375,5521
+New Rochelle (city),New Rochelle (city),city,Westchester,8.375,0.08375,6861
+White Plains (city),White Plains (city),city,Westchester,8.375,0.08375,6513
+Yonkers (city),Yonkers (city),city,Westchester,8.875,0.08875,6511
+Wyoming,Wyoming,county,,8.0,0.08,5621
+Yates,Yates,county,,8.0,0.08,5721
