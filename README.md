@@ -1,69 +1,52 @@
-# Instant Wellness Kits Tax Calculator
+﻿# Instant Wellness Kits
 
-Скрипт визначає юрисдикцію за координатами в NY, підбирає ставку з Pub718 та рахує:
-- `composite_tax_rate`
-- `tax_amount`
-- `total_amount`
-- `breakdown`
-- `jurisdictions`
+Lightweight web app and CLI for NY order tax calculation by coordinates.
 
-## Вимоги
+## Features
+- Tax calculation by `latitude`, `longitude`, `subtotal`
+- Automatic location resolution (`state`, `county`, `city`)
+- Interactive single order flow in web UI
+- Batch order flow (CSV-format inputs) in web UI
+- Order persistence to:
+  - `data/input.csv`
+  - SQLite database `data/orders.db`
 
-- Node.js 18+ (рекомендовано)
+## CSV Format
+```csv
+id,longitude,latitude,timestamp,subtotal
+```
+
+Example:
+```text
+21,-73.91910843778155,40.6671997058511,2025-11-11 18:33:45.288054025,120.0
+```
+
+## Requirements
+- Node.js 22+
 - npm
 
-## Встановлення
-
+## Install
 ```bash
 npm install
 ```
 
-## Принцип запуску
+## Run
+```bash
+npm run start:web
+```
+Open: `http://localhost:3000`
 
-Є 2 режими:
-
-1. `interactive`  
-   Вводите координати і subtotal вручну, отримуєте розрахунок одразу.
-2. `csv`  
-   Читає замовлення з CSV файлу (`data/input.csv` або ваш шлях).
-
-## Усі команди запуску
-
-### Через npm scripts
-
+## Other Modes
 ```bash
 npm run start:interactive
 npm run start:csv
 ```
 
-### Напряму через ts-node
-
-```bash
-npx ts-node src/index.ts --interactive
-npx ts-node src/index.ts --csv data/input.csv
-```
-
-### Перевірка TypeScript без збірки
-
+## Type Check
 ```bash
 npx tsc --noEmit
 ```
 
-## Приклад інтерактивного сценарію
-
-```text
-Latitude: 40.834113404202824
-Longitude: -73.8825612264399
-Subtotal: 25
-```
-
-На виході повертається JSON з розрахунком податку і юрисдикціями.
-
-## Формат CSV
-
-Очікувані колонки:
-
-```csv
-id,longitude,latitude,timestamp,subtotal
-```
-
+## Data Storage
+- CSV file: `data/input.csv`
+- SQLite DB: `data/orders.db` (table: `orders`)

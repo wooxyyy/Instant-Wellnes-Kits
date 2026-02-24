@@ -42,6 +42,10 @@ const MIME_TYPES: Record<string, string> = {
   ".webp": "image/webp"
 };
 
+function getErrorMessage(error: unknown) {
+  return error instanceof Error ? error.message : "Invalid request";
+}
+
 function sendJson(res: http.ServerResponse, statusCode: number, payload: unknown) {
   res.writeHead(statusCode, { "Content-Type": MIME_TYPES[".json"] });
   res.end(JSON.stringify(payload, null, 2));
@@ -138,6 +142,10 @@ function toStoredOrder(order: NormalizedOrder, source: string): StoredOrder {
   };
 }
 
+function parseBatchPayload(rawBody: string): BatchPayload {
+  return JSON.parse(rawBody) as BatchPayload;
+}
+
 function serveStatic(reqPath: string, res: http.ServerResponse) {
   const relativePath = reqPath === "/" ? "index.html" : reqPath.slice(1);
   const safePath = path.normalize(relativePath).replace(/^([.][.][/\\])+/, "");
@@ -183,8 +191,7 @@ const server = http.createServer(async (req, res) => {
       sendJson(res, 200, processed.result);
       return;
     } catch (error) {
-      const message = error instanceof Error ? error.message : "Invalid JSON";
-      sendJson(res, 400, { error: message });
+      sendJson(res, 400, { error: getErrorMessage(error) });
       return;
     }
   }
@@ -192,7 +199,7 @@ const server = http.createServer(async (req, res) => {
   if (req.method === "POST" && url.pathname === "/api/calculate-batch") {
     try {
       const rawBody = await readRequestBody(req);
-      const payload = JSON.parse(rawBody) as BatchPayload;
+      const payload = parseBatchPayload(rawBody);
       const orders = Array.isArray(payload.orders) ? payload.orders : [];
       const source = typeof payload.source === "string" && payload.source.trim() ? payload.source : "csv_orders_block";
       const results = [];
@@ -209,8 +216,7 @@ const server = http.createServer(async (req, res) => {
       sendJson(res, 200, { count: results.length, results });
       return;
     } catch (error) {
-      const message = error instanceof Error ? error.message : "Invalid JSON";
-      sendJson(res, 400, { error: message });
+      sendJson(res, 400, { error: getErrorMessage(error) });
       return;
     }
   }

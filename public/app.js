@@ -2,6 +2,10 @@
   el.textContent = typeof data === "string" ? data : JSON.stringify(data, null, 2);
 }
 
+function getErrorMessage(error) {
+  return error instanceof Error ? error.message : "Unknown error";
+}
+
 async function postJson(url, payload) {
   const response = await fetch(url, {
     method: "POST",
@@ -36,6 +40,11 @@ function toCsvLine(order) {
   return `${order.id},${formatNumberForCsv(order.longitude)},${formatNumberForCsv(order.latitude)},${
     order.timestamp
   },${formatNumberForCsv(order.subtotal)}`;
+}
+
+function parseRequiredNumber(value) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
 }
 
 const singleForm = document.getElementById("single-order-form");
@@ -88,12 +97,25 @@ singleForm.addEventListener("submit", async (event) => {
   const formData = new FormData(singleForm);
   const id = String(formData.get("id") ?? "").trim();
   const timestamp = String(formData.get("timestamp") ?? "").trim();
+  const latitude = parseRequiredNumber(formData.get("latitude"));
+  const longitude = parseRequiredNumber(formData.get("longitude"));
+  const subtotal = parseRequiredNumber(formData.get("subtotal"));
+
+  if (!id) {
+    setSingleError("Error: Order ID is required.");
+    return;
+  }
+
+  if (latitude == null || longitude == null || subtotal == null) {
+    setSingleError("Error: Latitude, longitude and subtotal must be valid numbers.");
+    return;
+  }
 
   const payload = {
     id,
-    latitude: Number(formData.get("latitude")),
-    longitude: Number(formData.get("longitude")),
-    subtotal: Number(formData.get("subtotal")),
+    latitude,
+    longitude,
+    subtotal,
     timestamp: timestamp || undefined,
     source: "create_order_block"
   };
@@ -103,7 +125,7 @@ singleForm.addEventListener("submit", async (event) => {
     const result = await postJson("/api/calculate", payload);
     setSingleResult(result);
   } catch (error) {
-    setSingleError(`Error: ${error instanceof Error ? error.message : "Unknown error"}`);
+    setSingleError(`Error: ${getErrorMessage(error)}`);
   }
 });
 
@@ -112,9 +134,9 @@ csvOrderForm.addEventListener("submit", (event) => {
 
   const formData = new FormData(csvOrderForm);
   const id = String(formData.get("id") ?? "").trim();
-  const longitude = Number(formData.get("longitude"));
-  const latitude = Number(formData.get("latitude"));
-  const subtotal = Number(formData.get("subtotal"));
+  const longitude = parseRequiredNumber(formData.get("longitude"));
+  const latitude = parseRequiredNumber(formData.get("latitude"));
+  const subtotal = parseRequiredNumber(formData.get("subtotal"));
   const timestampRaw = String(formData.get("timestamp") ?? "").trim();
 
   if (!id) {
@@ -122,7 +144,7 @@ csvOrderForm.addEventListener("submit", (event) => {
     return;
   }
 
-  if (!Number.isFinite(longitude) || !Number.isFinite(latitude) || !Number.isFinite(subtotal)) {
+  if (longitude == null || latitude == null || subtotal == null) {
     pretty(csvResult, "Error: Longitude, latitude and subtotal must be valid numbers.");
     return;
   }
@@ -154,7 +176,7 @@ processCsvBtn.addEventListener("click", async () => {
     });
     pretty(csvResult, result);
   } catch (error) {
-    pretty(csvResult, `Error: ${error instanceof Error ? error.message : "Unknown error"}`);
+    pretty(csvResult, `Error: ${getErrorMessage(error)}`);
   }
 });
 
