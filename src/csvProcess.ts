@@ -4,6 +4,7 @@ import { resolveCity } from "./geo";
 import { resolvePubRate } from "./pubRates";
 
 type TaxOutput = {
+  timestamp: string;
   composite_tax_rate: number;
   tax_amount: number;
   total_amount: number;
@@ -100,6 +101,14 @@ function roundMoney(n: number | string): number {
   return centsToNumber(subtotalToCents(n));
 }
 
+function resolveOrderTimestamp(timestamp: unknown): string {
+  if (typeof timestamp === "string" && timestamp.trim().length > 0) {
+    return timestamp.trim();
+  }
+
+  return new Date().toISOString();
+}
+
 export function formatTaxOutput(
   order: any,
   rate: number,
@@ -137,6 +146,7 @@ export function formatTaxOutput(
   else if (jurisdictions.region_code) jurisdictionsOutput.reporting_code = jurisdictions.region_code;
 
   return {
+    timestamp: resolveOrderTimestamp(order.timestamp),
     composite_tax_rate,
     tax_amount: roundMoney(centsToNumber(taxCents)),
     total_amount: roundMoney(centsToNumber(totalCents)),
@@ -169,6 +179,7 @@ export function calculateOrderTaxByCoordinates(order: {
   latitude: number | string;
   longitude: number | string;
   subtotal: number | string;
+  timestamp?: string;
 }) {
   const lat = Number(order.latitude);
   const lon = Number(order.longitude);
@@ -193,6 +204,7 @@ export function calculateOrderTaxByCoordinates(order: {
 
   return (
     output ?? {
+      timestamp: resolveOrderTimestamp(order.timestamp),
       composite_tax_rate: null,
       tax_amount: null,
       total_amount: null,

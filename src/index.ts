@@ -35,7 +35,8 @@ async function runInteractiveMode() {
     const result = calculateOrderTaxByCoordinates({
       latitude,
       longitude,
-      subtotal
+      subtotal,
+      timestamp: new Date().toISOString()
     });
 
     console.log(JSON.stringify(result, null, 2));
