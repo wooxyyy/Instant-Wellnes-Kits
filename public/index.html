@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instant Wellness Kits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="logo">Instant Wellness Kits</div>
+        <nav class="main-nav">
+          <a href="#kits">Kits</a>
+          <a href="#calculator">Tax Calculator</a>
+          <a href="#csv">CSV Orders</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <h1>Wellness starts with balanced routines and clear totals</h1>
+        <p>Cream-tone wellness catalog and a tax calculator for single and CSV orders in one web app.</p>
+      </section>
+
+      <section id="kits" class="container kits-section">
+        <h2>Wellness Kits</h2>
+        <div class="kits-grid">
+          <article class="kit-card">
+            <h3>Calm Evening Kit</h3>
+            <p>Lavender tea, eye mask, magnesium blend.</p>
+            <span class="price">$49</span>
+          </article>
+          <article class="kit-card">
+            <h3>Daily Focus Kit</h3>
+            <p>Adaptogen mix, vitamin B complex, planner.</p>
+            <span class="price">$59</span>
+          </article>
+          <article class="kit-card">
+            <h3>Hydration Reset Kit</h3>
+            <p>Electrolyte sachets, shaker bottle, mineral tabs.</p>
+            <span class="price">$45</span>
+          </article>
+          <article class="kit-card">
+            <h3>Immunity Support Kit</h3>
+            <p>Vitamin C, zinc, herbal immunity drops.</p>
+            <span class="price">$54</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="calculator" class="container panel">
+        <h2>Create Order</h2>
+        <form id="single-order-form" class="form-grid">
+          <label>
+            Order ID
+            <input name="id" type="text" placeholder="e.g. 21" required />
+          </label>
+          <label>
+            Latitude
+            <input name="latitude" type="number" step="any" required />
+          </label>
+          <label>
+            Longitude
+            <input name="longitude" type="number" step="any" required />
+          </label>
+          <label>
+            Subtotal
+            <input name="subtotal" type="number" step="0.01" required />
+          </label>
+          <label>
+            Timestamp (optional)
+            <input name="timestamp" type="text" placeholder="YYYY-MM-DD HH:mm:ss.fffffffff" />
+          </label>
+          <button type="submit">Calculate</button>
+        </form>
+        <div id="single-result" class="result-grid">
+          <div class="result-item">
+            <span class="result-label">Place</span>
+            <strong id="place-value">-</strong>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Tax Amount</span>
+            <strong id="tax-value">-</strong>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Total Amount</span>
+            <strong id="total-value">-</strong>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Timestamp</span>
+            <strong id="timestamp-value">-</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="csv" class="container panel">
+        <h2>CSV Orders Tax</h2>
+        <p>Format: <code>id,longitude,latitude,timestamp,subtotal</code></p>
+        <form id="csv-order-form" class="form-grid">
+          <label>
+            Order ID
+            <input name="id" type="text" placeholder="e.g. 21" required />
+          </label>
+          <label>
+            Longitude
+            <input name="longitude" type="number" step="any" required />
+          </label>
+          <label>
+            Latitude
+            <input name="latitude" type="number" step="any" required />
+          </label>
+          <label>
+            Timestamp (optional)
+            <input name="timestamp" type="text" placeholder="YYYY-MM-DD HH:mm:ss.fffffffff" />
+          </label>
+          <label>
+            Subtotal
+            <input name="subtotal" type="number" step="0.01" required />
+          </label>
+          <button type="submit">Add To Batch</button>
+        </form>
+        <div class="actions-row">
+          <button id="process-csv-btn" type="button">Calculate Batch</button>
+          <button id="clear-csv-btn" type="button">Clear Batch</button>
+        </div>
+        <pre id="csv-lines-preview" class="result-box">No batch orders yet.</pre>
+        <pre id="csv-result" class="result-box">Batch results appear here...</pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Instant Wellness Kits</p>
+        <p>NY Tax Calculator Web App</p>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
